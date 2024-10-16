@@ -1,0 +1,758 @@
+/*
+Theme Name: Ali Han Neon
+Theme URI: http://www.alihan.com.tr/blog/
+Description: High quality multicolor dark WordPress theme with 2-3 column layout, dropdown menu, cool style search box and multiple widget ready. Footer page: Blog information area, Recent Comments and Recent Posts. Theme by Ali Han. 
+Date: 08th August 2009
+Version: 1.9.8
+Author: Ali Han
+Author URI: http://www.alihan.com.tr
+Tags:black,blue,brown,green,orange,pink,purple,red,silver,tan,white,yellow,dark,fixed-width, two-columns, right-sidebar,photoblogging
+.
+Released under the <a href="http://www.opensource.org/licenses/gpl-license.php">GPL</a>.
+.
+*/
+
+* {
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+
+html {
+background:url(images/alihanNeon_top.jpg) top center repeat-x;
+}
+
+body {
+font-size:12px;
+color:#FFFFFF;
+height:100%;
+background:#000000;
+margin:0 auto;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight:normal;
+}
+
+h1, h2, h3, h4, h5 {
+	color:#FFFFFF;
+}
+
+img {
+  border:0;
+}
+input, textarea {
+  border:#999999 1px solid;
+  font-weight:bold;
+  color:#FFFF00;
+  background:url(images/alihanNeonTheme_input_bg.png) repeat-x #000000;
+}
+
+.banner {
+}
+.tablo {
+background:url(images/alihanNeon_top.jpg) top center repeat-x;
+}
+#masthead {
+  height:105px;
+  padding-top:50px;
+}
+
+#banner_text {
+float:left;
+}
+
+#banner_text h1 {
+  font-size:45px;
+  color:#000000;
+  font-family:Palatino, serif;
+  font-variant: small-caps;
+  text-shadow : #000000 0 2px 2px;
+}
+
+#banner_text h1 a {
+  color:#FFFFFF;
+  text-decoration:none;
+}
+
+#bloginfo_desc {
+  font-weight:bold;
+  font-size:15px;
+  color:#FFFFFF;
+  float:left;
+  position:absolute;
+  top:110px;
+  font-family:Helvetica, sans-serif;
+  text-shadow : #000000 0 1px 1px;
+}
+
+p, li {
+	color:#FFFFFF;
+}
+
+a {
+	color:#FFFF66;
+	outline:none;
+}
+
+div#content {
+  padding:30px 30px 0px;
+}
+
+/*-----------------------------------------------------------------------------
+
+  Main Content
+
+-----------------------------------------------------------------------------*/
+.postmeta {
+font-size:12px;
+color:#999999;
+width:600px;
+}
+
+.postmeta a { color:#999999; text-decoration:none;}
+
+
+.tags span  {
+	display: inline;
+	margin: 0 7px 0 0;
+	padding: 5px 0 6px 20px;
+	font-weight: bold;
+	font-size: 11px;
+	background: url(images/alihanNeonTheme_tagleft.png) no-repeat left top;
+}
+
+.tags span a:link,
+.tags span a:visited  {
+	margin: 0 -3px 0 0;
+	padding: 5px 9px 7px 0;
+	line-height: 30px;
+	color:#CCCCCC;
+	text-decoration:none;
+	background: url(images/alihanNeonTheme_tagright.png) no-repeat right top;
+}
+
+.more-link {
+height:16px; width:115px;
+text-align:center;
+background:url(images/alihanNeonTheme_button.png) no-repeat;
+}
+.more-link a {
+display:block;
+text-decoration:none;
+color:#00CCFF;
+font-size:14px;
+font-weight:bold;
+}
+.more-link a:hover {
+text-decoration:none;
+background:url(images/alihanNeonTheme_buttona.png) no-repeat;
+color:#000000;
+}
+
+.posttitle {
+background:url(images/alihanNeonTheme_titleBg.png)  top left no-repeat;
+height:71px;
+width:621px;
+padding-left:10px;
+padding-right:10px;
+padding-top:20px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+#main_content {
+  overflow:hidden;
+  width:620px;
+  float:left;
+  min-height:1170px;
+}
+
+#main_content h2 {
+letter-spacing:0.01em;
+font-size:18px;
+font-weight:lighter;
+color:#FFFFFF;
+}
+
+#main_content h2 a {
+	display:block;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#main_content h2 a:hover {
+  color:#FFFF99;
+  text-decoration:none;
+}
+
+#main_content p {
+  font-size:12px;
+  line-height:2em;
+  margin:0px;
+}
+
+.article {
+  margin-bottom:15px;
+}
+
+.article blockquote {
+  padding-left:10px;
+  margin:15px 10px;
+  border-left:5px solid #FFFF99;
+}
+
+.article ul, .article ol {
+  margin:10px;
+}
+
+.article ul li {
+	margin:5px 0 5px 10px;
+	list-style:url(images/alihanNeonTheme_check.png) inside;
+}
+
+.article ul li li, .article ol li li {
+  list-style:circle;
+}
+
+.article ol li {
+  margin:5px 0 5px 20px;
+  list-style:decimal;
+}
+
+#main_content p.byline {
+  font-size:1.2em;
+}
+
+ul.article_footer {
+  text-align:left;
+  margin-top:15px;
+  padding-top:15px;
+  border-top:#666666 1px solid;
+}
+
+ul.article_footer a:link {
+text-decoration:none;
+}
+
+ul.article_footer li {
+  display:inline;
+  margin:5px;
+  padding-right:10px;
+  font-size:1.2em;
+}
+
+ul.article_footer li.last {
+  border-right:0;
+}
+
+#articleFooter{
+background:#0099FF;
+}
+/*-----------------------------------------------------------------------------
+
+  Secondary Content
+
+-----------------------------------------------------------------------------*/
+
+#secondary_content {
+  width:280px;
+  float:left;
+  margin-bottom:30px;
+}
+
+#secondary_content h2 {
+	font-size:18px;
+	color:#FFFF00;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+#secondary_content p {
+  font-size:1.2em;
+  width:280px;
+  line-height:1.75em;
+  font-style:italic;
+}
+#secondary_content a {
+  text-decoration:none;
+  font-size:15px;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+}
+
+#navi {
+  width:930px;
+}
+
+#navi-in {
+  margin-top:5px;
+  margin-left:22px;
+  float:left;
+  position:inherit;
+  overflow:hidden;
+  height:30px;
+  width:auto;
+  font-size:16px;
+  font-family:Geneva, Arial, Helvetica, sans-serif;
+  font-weight:bolder;
+}
+
+#navi-in a {
+color:#0099FF;
+text-decoration:none;
+}
+#navi-in a:hover {
+ color:#00CCFF;
+}
+
+#search {
+	float:right;
+	position:inherit;
+	padding-top:5px;
+	padding-left:28px;
+	margin:0px;
+}
+
+#search input {
+	background:none;
+	width:120px;
+	height:18px;
+	border:none;
+	font-weight:bold;
+	color:#00CCFF;
+}
+
+#search input#submit {
+  width:10px;
+  height:20px;
+  background:none;
+  border:none;
+}
+
+/*commnt*/
+#submit{
+background:url(images/alihanNeonTheme_button.png) no-repeat;
+font-size:13px;
+color:#FFFFFF;
+border:0px;
+text-align:center;
+width:115px;
+height:16px;
+}
+
+#author, #url, #email, #comment{
+border:#FFFFCC 1px solid;
+font-size:14px;
+color:#FFFFFF;
+background:url(images/alihanNeonTheme_input_bg.png) repeat-x #000000;
+}
+
+.secondary_navTop{
+width:280px;
+height:21px;
+background:url(images/alihanNeonTheme_navTop.png) no-repeat bottom center;
+}
+.secondary_navBg{
+width:280px;
+background:url(images/alihanNeonTheme_navBg.png) repeat-y center;
+}
+.secondary_navBottom{
+width:280px;
+height:21px;
+background:url(images/alihanNeonTheme_navBottom.png) no-repeat top center;
+}
+
+#secondary_nav {
+width:280px;
+font-family:Helvetica, sans-serif
+}
+
+#secondary_nav a {
+color:#FFFFFF;
+}
+
+#secondary_nav .widget ul li a,#secondary_nav .categories ul li a {
+padding-left:15px;
+display:block;
+}
+#secondary_nav .widget ul li a:hover,#secondary_nav .categories ul li a:hover {
+padding-left:18px;
+}
+
+
+#secondary_nav h2 a {
+font-size:12px;
+text-decoration:none;
+color:#FFFFFF;
+}
+
+#secondary_nav ul {
+  padding-left:15px;
+  padding-right:15px;
+}
+#secondary_nav ul ul {
+  padding-left:10px;
+}
+
+#secondary_nav ul ul ul {
+padding-left:10px;
+}
+
+#secondary_nav ul ul li {
+  margin:0px 0;
+}
+
+#secondary_nav ul ul li a {
+  text-decoration:none;
+}
+
+#secondary_nav ul ul li a:hover {
+  color:#FFFF99;
+}
+
+#secondary_content hr {
+  border:0;
+}
+
+/*-----------------------------------------------------------------------------
+   menus
+ -----------------------------------------------------------------------------*/
+#top_menu {
+position:absolute;
+margin:0px;
+left:21;
+margin-left:21px;
+height:32px;
+width:918px;
+background:url(images/alihanNeonTheme_topMenu_bg.png) top repeat-x;
+}
+#top_mL {
+position:absolute;
+float:left;
+background:url(images/alihanNeonTheme_topMenu_L.png) top left no-repeat;
+width:21px;
+height:32px;
+float:left;
+}
+#top_mR {
+
+float:right;
+background:url(images/alihanNeonTheme_topMenu_R.png) top left no-repeat;
+width:21px;
+height:32px;
+float:right;
+}
+#top_mRss {
+right:21px;
+float:right;
+padding:2px;
+}
+
+ul#top_menu_nav, ul#top_menu_nav ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+  
+ul#top_menu_nav li {
+	float: left;
+	position: relative;
+	width:auto;
+	padding:3px;
+}
+ul#top_menu_nav li li {
+background:#000000;
+width:150px;
+}
+
+ul#top_menu_nav li ul {
+	display: none;
+	position: absolute; 
+	top: 30px; /* 15px + 4px = 19px */ 
+	left: 0;
+}
+
+ul#top_menu_nav li > ul {
+top: auto;
+left: auto;
+}
+
+ul#top_menu_nav li a { 
+display: block;
+margin: 0px;
+padding: 2px 3px;
+color:#CCCCCC;
+font-weight:bold;
+text-decoration: none;
+}
+
+ul#top_menu_nav li a:hover {
+color:#FFFF00;
+}
+
+ul#top_menu_nav li:hover ul, ul#top_menu_nav li.over ul { 
+	display: block;
+}
+
+/*-----------------------------------------------------------------------------
+   Footer
+ -----------------------------------------------------------------------------*/
+.flinks{
+margin-top:90px;
+}
+.flinks a:link {
+color:#CCCCCC;
+}
+
+#footer {
+background:url(images/alihanNeon_bottom.jpg) bottom center;
+height:300px;
+}
+
+
+#footer a {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#footer td {
+	border-top:#999999 1px dotted;
+	min-width:250px;
+	text-align:left;
+}
+#footer td a {
+	font-weight:bold;
+	color:#FFCC33;
+}
+#footer td a:hover {
+	color:#FFFF00;
+}
+#footer h3 {
+	border-bottom:#999999 1px dotted;
+	color:#FF9900;
+	font-weight:bold;
+	font-size:16px;
+	
+}
+#footer li {
+list-style:url(images/alihanNeonTheme_check.png) inside;
+}
+
+
+/*-----------------------------------------------------------------------------
+   Wordpress Specific Stuff recentcomments
+ --------------------------------------------------------------------------*/
+
+h3.pagetitle {
+  margin-bottom:15px;
+}
+
+.entry p small {
+  line-height:1.5;
+}
+
+h3#comments {
+  margin:30px 0 20px;
+}
+
+ol.commentlist {
+  margin:0px;
+}
+
+ol.commentlist li {
+margin:0px;
+padding:0px;
+}
+
+.comment_bubble {
+  background:url(images/alihanNeonTheme_comment_bubble_c.png) repeat-y;
+  width:621px; margin:0px;
+}
+.comment_bubble p {
+	padding:0px 20px 0px 15px;
+}
+.comment_bubble img {
+padding:0px 5px 5px 15px;
+float:left;
+}
+
+.comment_bubble_t {
+  background:url(images/alihanNeonTheme_comment_bubble_t.png) no-repeat bottom;
+  height:36px;
+  margin:0px; padding:0px; width:621px;
+  vertical-align:bottom;
+}
+.comment_bubble_t span {
+padding-left:15px;
+text-align:left;
+text-decoration:none;
+}
+.comment_bubble_t span cite {
+float:right;
+padding-right:15px;
+text-decoration:none;
+}
+.comment_bubble_b {
+  background:url(images/alihanNeonTheme_comment_bubble_b.png) no-repeat top left;
+  height:36px;
+  margin:0px; padding:0px; width:621px;
+  font-size:9px;
+}
+
+ol.commentlist li a,  ol.commentlist li a:link {
+float:right;
+padding-right:15px;
+color:#999999;
+}
+
+
+ol.commentlist li cite {
+font-size:1.4em;
+float:right;
+padding-right:15px;
+color:#999999;
+}
+
+textarea#comment {
+  width:550px;
+  margin:10px 0;
+  padding:10px;
+}
+
+#main_content p.comment_meta a:link {
+  font-size:1em;
+  text-align:right;
+  float:right;
+  margin:0;
+  color:#CCCCCC;
+}
+
+form#commentform {
+  margin:10px 0;
+  padding:10px 20px;
+}
+
+form#commentform label {
+  margin-left:5px;
+}
+/*    -------------       */
+
+#main_content ul.links_page li {
+  margin:15px 0;
+}
+
+#main_content li.linkcat h2 {
+  font-size:1.6em;
+  margin-bottom:5px;
+  color:#4F647B;
+}
+
+#main_content li.linkcat li {
+  font-size:1.2em;
+  margin:3px 0;
+}
+
+ul.archives {
+  margin-bottom:20px;
+}
+
+ul.archives li {
+  font-size:1.4em;
+  margin:3px 0;
+  font-weight:bold;
+}
+
+ul.archives li a {
+  font-weight:normal;
+}
+
+ul.archives li li {
+  font-size:0.8em;
+  font-weight:normal;
+}
+
+body#commentspopup {
+  padding:10px;
+  width:360px;
+}
+
+body#commentspopup h1 {
+  font-size:2em;
+  margin-left:0;
+}
+
+body#commentspopup h2 {
+  margin:10px 0;
+}
+
+body#commentspopup p {
+  margin:10px 0;
+}
+
+body#commentspopup label {
+  margin:0;
+}
+
+body#commentspopup textarea {
+  width:295px;
+  height:50px;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #666666;
+	padding-top: 4px;
+	margin: 10px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}
+
+.wp-caption-dd {
+  font-size: 11px;
+  line-height: 17px;
+  padding: 0 4px 5px;
+  margin: 0;
+}
+
+.wp-caption-text {
+color:#FFFFFF;
+font-weight:bold;
+}
+
+div.navigation {
+  display:block;
+  height:1em;
+}
+
+/*-----------------------------------------------------------------------------
+
+  Clearfix
+
+-----------------------------------------------------------------------------*/
+
+.clearfix:after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+.clearfix {display:inline-block;}
+/* Hide from IE Mac \*/
+  .clearfix {display:block;}
+/* End hide from IE Mac */
