@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ein paar Praktische Links & Tools">
+    <title>Tools</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        li a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        li a:hover {
+            text-decoration: underline;
+        }
+        li p {
+            font-size: 0.95em;
+            color: #555;
+            margin-top: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        .disclaimer {
+            background-color: #f4f4f9;
+            color: #777;
+            padding: 15px;
+            border-top: 1px solid #ccc;
+            font-size: 0.9em;
+        }
+    </style>
+    <script>
+        var titleIndex = 0;
+        var titleString = '';
+        var switchType = -1;
+        var titleBase = '<<>> | Tools | <<>> by RyūgūDev';
+
+        function switchTitle() {
+            var currentChar = titleBase.charAt(titleIndex);
+            if (titleBase.length === titleIndex) {
+                titleIndex = 0;
+                titleString = '';
+            }
+
+            switchType++;
+            if (switchType == 0) {
+                titleString = titleString.concat('-');
+            } else if (switchType == 1) {
+                titleString = titleString.substring(0, titleString.length - 1).concat('+');
+            } else if (switchType == 2) {
+                titleString = titleString.substring(0, titleString.length - 1).concat('|');
+            } else if (switchType == 3) {
+                titleString = titleString.substring(0, titleString.length - 1).concat('/');
+            } else if (switchType == 4) {
+                titleString = titleString.substring(0, titleString.length - 1).concat('-');
+            } else if (switchType == 5) {
+                titleString = titleString.substring(0, titleString.length - 1).concat('+');
+            } else if (switchType == 6) {
+                titleString = titleString.substring(0, titleString.length - 1).concat('|');
+            } else if (switchType == 7) {
+                titleString = titleString.substring(0, titleString.length - 1).concat(currentChar);
+                titleIndex++;
+                switchType = -1;
+            }
+
+            document.title = titleString;
+            setTimeout(switchTitle, 200);
+        }
+
+        window.onload = function() {
+            switchTitle();
+        };
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Tools & Links</h1>
+    <p>Sachen die man Immer mal gebrauchen kann.</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>Web Proxy</h2>
+        <ul>
+            <li>
+                <a href="https://plainproxies.com/resources/free-web-proxy</a>
+                <p>Bypasses Internet Restrictions without installing ANYTHING!</p>
+            </li>
+        </ul>
+    </section>
+
+</body>
+</html>
